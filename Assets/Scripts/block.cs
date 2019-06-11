@@ -5,6 +5,7 @@ using UnityEngine;
 public class block : MonoBehaviour
 {
     [SerializeField] AudioClip brokenAudio;
+    [SerializeField] GameObject sparkles;
     Level level;
     GameStatus gameStatus;
 
@@ -19,7 +20,14 @@ public class block : MonoBehaviour
         AudioSource.PlayClipAtPoint(brokenAudio, Camera.main.transform.position);
         level.BlockDestroyed();
         gameStatus.AddToScore();
+        TriggerSparkles();
         Destroy(gameObject);
         
+    }
+
+    public void TriggerSparkles()
+    {
+        GameObject sparkleEffect = Instantiate(sparkles, transform.position, transform.rotation);
+        Destroy(sparkleEffect, 1f);
     }
 }
