@@ -44,3 +44,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blocksRemaining: 0
+  gameSpeed: 1.74

@@ -5,20 +5,11 @@ using UnityEngine;
 public class Level : MonoBehaviour
 {
     [SerializeField] int blocksRemaining;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-    }
 
     public void CountBreakableBlocks()
-    {
-        blocksRemaining++;
+    { 
+            blocksRemaining++;
+
     }
 
     public void BlockDestroyed()
