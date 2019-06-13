@@ -47,8 +47,8 @@ MonoBehaviour:
   currentScore: 0
   pointsPerHit: 50
   scoreText: {fileID: 6884204224083427131}
-  sparkles: {fileID: 100000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 3}
-  gameSpeed: 1
+  isAutoPlay: 1
+  gameSpeed: 4.1
 --- !u!1001 &1801267269
 PrefabInstance:
   m_ObjectHideFlags: 0
